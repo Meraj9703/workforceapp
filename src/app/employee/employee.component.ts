@@ -15,6 +15,7 @@ export class EmployeeComponent implements OnInit {
   getdata:any=[];
   p: number = 1;
   img:any;
+  img1:any;
    
   constructor(private routes:Router,private _sanitizer: DomSanitizer,private empservice:EmpserviceService,private ar:ActivatedRoute) {
     for(let i=0;i<this.getdata.length;i++){
