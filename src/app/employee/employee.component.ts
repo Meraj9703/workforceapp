@@ -16,11 +16,8 @@ export class EmployeeComponent implements OnInit {
   p: number = 1;
   img:any;
   img1:any;
-<<<<<<< HEAD
   img2:any;
   img3:any;
-=======
-  
   
    console.log("sonu");
    console.log("sonu");
@@ -29,10 +26,8 @@ export class EmployeeComponent implements OnInit {
    console.log("sonu");
    console.log("sonu");
    console.log("sonu");
->>>>>>> dev123
-   
-   
-    console.log("Meraj");
+
+       console.log("Meraj");
    console.log("Meraj");
    console.log("Meraj");
    console.log("Meraj");
