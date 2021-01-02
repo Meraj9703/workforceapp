@@ -19,6 +19,13 @@ export class EmployeeComponent implements OnInit {
   img2:any;
   img3:any;
    
+   
+    console.log("Meraj");
+   console.log("Meraj");
+   console.log("Meraj");
+   console.log("Meraj");
+   console.log("Meraj");
+   console.log("Meraj");
   constructor(private routes:Router,private _sanitizer: DomSanitizer,private empservice:EmpserviceService,private ar:ActivatedRoute) {
     for(let i=0;i<this.getdata.length;i++){
     }
