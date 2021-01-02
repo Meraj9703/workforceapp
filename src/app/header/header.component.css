@@ -1,0 +1,19 @@
+ .navbar-nav .nav-item a{
+     color: white;
+ }
+ .navbar-brand {
+     color: rgb(245, 239, 238);
+     font-size: larger;
+     background-color: yellowgreen;
+     width: 100px;
+     padding:5px;
+     border-radius: 5px;
+      
+ }
+
+ .active {
+    background-color:rgb(185, 185, 252);
+    
+    border-radius: 5px;
+  }
+  

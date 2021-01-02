@@ -1,0 +1,57 @@
+  
+  
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Document</title>
+  </head>
+  <body>
+      <div class="container mt-3">
+          <div class="card">
+              <div class="card-title"><h4 class="text-center" >Please fill with your details</h4></div>
+              <div class="card-body">
+                <div class="row">
+                    <div class="col-sm-3">
+                         <div class="card">
+                             <div class="card-body" >
+                                   <img  [src]="imageUrl" height="200" width="200">
+                             </div>
+                         </div>
+                    </div>
+                     
+                    <div class="col-sm-8">
+                      
+                        <form [formGroup]="myForm" (ngSubmit)="subData()" multipart="form/data">
+                          <div class="form-group">
+                              <input     name="firstname" formControlName="first_name" placeholder="Full Name" class="form-control" type="text">
+                            
+                            </div>
+      
+                            <div class="form-group">
+                              <input   name="lastname" formControlName="last_name" placeholder="Last Name" class="form-control" type="text">
+                            </div>
+      
+                            <div class="form-group">
+                              <input   name="email" formControlName="email" placeholder="Email" class="form-control" type="text">
+                            </div>
+                            <div class="form-group">
+                              <input (change)="picked($event,1,$event.target.files)" type="file">
+                              </div>
+                             
+                            <div class="form-group">
+                                <button type="submit" style="margin-right: 5px;" class="btn btn-primary btn">Add Employee</button>
+                                <button (click)="Cancel()"  class="btn btn-primary btn">Cancel</button>
+                            </div>
+                            
+                        </form>
+                    </div>
+                </div>
+              </div>
+          </div>
+        
+          
+      </div>
+  </body>
+  </html>

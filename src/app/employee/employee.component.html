@@ -1,0 +1,27 @@
+<div class="text-center text-danger font-weight-bold" style="margin-left: 84vw; padding: 0.5vw;">Total no of
+    {{getdata.length}} Employee</div>
+
+<div class="container">
+    <div class="card-group">
+        <div class="row">
+            <div class="card col-xs-3 col-sm-3 col-md-3" style="width: 74vw;"
+                *ngFor="let data of getdata | paginate:{itemsPerPage:8,currentPage:p}">
+                <img class="card-img-top" [src]="'data:image/jpg;base64,'+data.upload" height="200" width="200" />
+                <div class="card-body">
+                    <div class="card-title">{{data.first_name}} {{data.last_name}}</div>
+                    <hr>
+                    <p class="card-text">
+                        <button (click)="details(data.id)" class="btn btn-primary btn-block">Details</button>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<nav aria-label="Page navigation" style="margin-top: 1vw !important; margin-left: 39vw !important;">
+
+    <pagination-controls *ngIf="getdata.length>0" (pageChange)="p=$event">
+    </pagination-controls>
+
+</nav>
