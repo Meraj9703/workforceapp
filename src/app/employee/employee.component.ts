@@ -18,6 +18,10 @@ export class EmployeeComponent implements OnInit {
   console.log("hi");
   console.log("hi");
   console.log("hi")
+  
+  console.log("meraj");
+  console.log("meraj");
+  console.log("meraj");
  
   constructor(private routes:Router,private _sanitizer: DomSanitizer,private empservice:EmpserviceService,private ar:ActivatedRoute) {
     for(let i=0;i<this.getdata.length;i++){
