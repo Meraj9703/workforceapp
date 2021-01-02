@@ -16,6 +16,15 @@ export class EmployeeComponent implements OnInit {
   p: number = 1;
   img:any;
   img1:any;
+  
+  
+   console.log("sonu");
+   console.log("sonu");
+   console.log("sonu");
+   console.log("sonu");
+   console.log("sonu");
+   console.log("sonu");
+   console.log("sonu");
    
   constructor(private routes:Router,private _sanitizer: DomSanitizer,private empservice:EmpserviceService,private ar:ActivatedRoute) {
     for(let i=0;i<this.getdata.length;i++){
