@@ -17,6 +17,8 @@ export class EditemployeeComponent implements OnInit {
   sellersPermitString: string;
   fileToUpload: any;
   imageUrl: any;
+  
+  console.log("hi all")
   constructor(private ar:ActivatedRoute,private _sanitizer: DomSanitizer,private empservice:EmpserviceService,private routes:Router) { 
 
     this.myForm=new FormGroup({
